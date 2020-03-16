@@ -4,13 +4,13 @@ apply plugin: 'kotlin'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'com.vk.api:sdk:0.5.12'
-    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.vk.api:sdk:1.0.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
     //Binding for Log4J -->
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.7'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.13.1'
 
     //Log4j API and Core implementation required for binding
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.7'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.1'
     //noinspection AnnotationProcessorOnCompilePath
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.1'
 }

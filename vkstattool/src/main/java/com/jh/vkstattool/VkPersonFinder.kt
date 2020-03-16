@@ -5,7 +5,6 @@ import com.vk.api.sdk.client.actors.UserActor
 import com.vk.api.sdk.objects.groups.Group
 import com.vk.api.sdk.objects.groups.GroupFull
 import com.vk.api.sdk.objects.users.UserFull
-import com.vk.api.sdk.queries.users.UserField
 import org.slf4j.LoggerFactory
 
 class VkPersonFinder(private val vk: VkApiClient, private val actor: UserActor) {
@@ -70,7 +69,6 @@ class VkPersonFinder(private val vk: VkApiClient, private val actor: UserActor) 
 
     fun getUsersByIds(userIds: Set<Int>): List<UserFull> =
         vk.users().get(actor).userIds(userIds.map { it.toString() }.toMutableList())
-            .fields(UserField.NICKNAME)
             .execute()
 
     fun getGroupsByIds(groupsId: Set<Int>): List<GroupFull> = if (groupsId.isNotEmpty())

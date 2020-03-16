@@ -52,7 +52,7 @@ class VKStat {
 
                 val code = res.split("/?code=")[1].split(" ")[0]
                 log.info("code = $code")
-                val authRespond = vk.oauth()
+                val authRespond = vk.oAuth()
                     .userAuthorizationCodeFlow(APP_ID, CLIENT_SECRET, REDIRECT_URI, code)
                     .execute()
                 if (authRespond.error == null)
