@@ -1,4 +1,4 @@
-include ':app'
 rootProject.name='Vk Search Person'
+include ':app'
 include ':vkstattool'
 include ':vkshitposter'

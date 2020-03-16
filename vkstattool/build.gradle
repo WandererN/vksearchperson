@@ -6,11 +6,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'com.vk.api:sdk:0.5.12'
     implementation 'com.squareup.okhttp3:okhttp:4.4.0'
-//    implementation group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.22'
     //Binding for Log4J -->
     implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.7'
 
-//Log4j API and Core implementation required for binding
+    //Log4j API and Core implementation required for binding
     implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.7'
     //noinspection AnnotationProcessorOnCompilePath
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'
